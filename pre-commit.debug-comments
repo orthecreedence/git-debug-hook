@@ -1,0 +1,31 @@
+#!/bin/sh
+
+DEBUG=""
+function add_to_debug {
+	filetype=$1
+	comment=$2
+
+	next=$(
+		git diff \
+			--cached \
+			--name-only \
+			--grep "${comment}\s*DEBUG" \
+			-- "*.${filetype}"
+	)
+	DEBUG="${DEBUG}${next}"
+}
+
+add_to_debug 'js' '//'
+add_to_debug 'html' '<!--'
+add_to_debug 'lisp' ';'
+add_to_debug 'sh' '#'
+add_to_debug 'hbs' '{{!--'
+
+if [ "${DEBUG}" != "" ]; then
+	echo
+	echo "Please address the DEBUG comments in following files before committing:"
+	echo
+	echo "${DEBUG}" | sed 's/^/  /'
+	exit 1
+fi
+
