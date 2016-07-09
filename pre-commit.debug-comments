@@ -9,13 +9,14 @@ function add_to_debug {
 		git diff \
 			--cached \
 			--name-only \
-			--grep "${comment}\s*DEBUG" \
+			-G"${comment}[ ]*DEBUG" \
 			-- "*.${filetype}"
 	)
 	DEBUG="${DEBUG}${next}"
 }
 
 add_to_debug 'js' '//'
+add_to_debug 'rs' '//'
 add_to_debug 'html' '<!--'
 add_to_debug 'lisp' ';'
 add_to_debug 'sh' '#'
