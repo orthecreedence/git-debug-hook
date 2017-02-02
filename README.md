@@ -22,7 +22,7 @@ great reminder to not commit your debug code.
 
 # Usage
 
-Simple put the file `pre-commit.debug-comments` into `.git/hooks/pre-commit`.
+Simply put the file `pre-commit.debug-comments` into `.git/hooks/pre-commit`.
 You can also host this repo somewhere else and symlink `.git/hooks/pre-commit`
 to `git-debug-hook/pre-commit.debug-comments`.
 
