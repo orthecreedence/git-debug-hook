@@ -28,6 +28,18 @@ to `git-debug-hook/pre-commit.debug-comments`.
 
 That's it!
 
+# Supported languages
+
+The hook detects language by file extension (ie, .js -> javascript, .lisp ->
+lisp, etc).
+
+- javascript
+- rust
+- html
+- lisp
+- (ba)sh
+- handlebars
+
 # Contributing
 
 If you want support for a certain language, don't open an issue, I'll probably
