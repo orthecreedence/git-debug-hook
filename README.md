@@ -30,8 +30,8 @@ That's it!
 
 # Contributing
 
-If you want support for a certain language, don't open an issue, fork and open
-a pull request.
+If you want support for a certain language, don't open an issue, I'll probably
+just ignore it (being realistic here). Fork the project and open a pull request.
 
 # License
 
