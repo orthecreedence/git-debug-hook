@@ -43,7 +43,11 @@ lisp, etc).
 # Contributing
 
 If you want support for a certain language, don't open an issue, I'll probably
-just ignore it (being realistic here). Fork the project and open a pull request.
+just ignore it (being realistic here).
+
+Fork the project and open a pull request. Be sure to also add your language to
+the [supported language list](#supported-languages) or I'll contact the
+authorities. GOOD DAY, SIR/MADAM/NON-GENDER-CONFORMING-FORMAL-TITLE.
 
 # License
 
