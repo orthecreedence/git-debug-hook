@@ -21,6 +21,7 @@ add_to_debug 'html' '<!--'
 add_to_debug 'lisp' ';'
 add_to_debug 'sh' '#'
 add_to_debug 'hbs' '{{!--'
+add_to_debug 'java' '//'
 
 if [ "${DEBUG}" != "" ]; then
 	echo
