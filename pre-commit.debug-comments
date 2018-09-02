@@ -23,6 +23,7 @@ add_to_debug 'sh' '#'
 add_to_debug 'yaml' '#'
 add_to_debug 'hbs' '{{!--'
 add_to_debug 'java' '//'
+add_to_debug 'php' '//'
 
 if [ "${DEBUG}" != "" ]; then
 	echo
