@@ -1,0 +1,6 @@
+#!/bin/sh
+
+HOOK_DIR=/var/www/git-hooks
+
+${HOOK_DIR}/pre-commit.debug-comments || exit
+
