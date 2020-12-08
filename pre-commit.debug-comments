@@ -16,6 +16,7 @@ function add_to_debug {
 }
 
 add_to_debug 'js' '//'
+add_to_debug 'ts' '//'
 add_to_debug 'rs' '//'
 add_to_debug 'html' '<!--'
 add_to_debug 'lisp' ';'
