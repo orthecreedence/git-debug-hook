@@ -27,6 +27,7 @@ add_to_debug 'java' '//'
 add_to_debug 'php' '//'
 add_to_debug 'css' '/*'
 add_to_debug 'scss' '//'
+add_to_debug 'toml' '#'
 
 if [ "${DEBUG}" != "" ]; then
 	echo
